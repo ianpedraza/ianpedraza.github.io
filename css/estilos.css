@@ -5,6 +5,10 @@ body{
     justify-content: center;
 }
 
+.container{
+	padding: 20px;
+}
+
 #imagen{
-	height: 80%;
+	width:400px;
 }
