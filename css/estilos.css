@@ -3,8 +3,23 @@ body{
     height: 100vh;
     align-items: center;
     justify-content: center;
+	text-align: center;
+}
+
+.container{
+	padding: 20px;
 }
 
 #imagen{
-	height: 80%;
+	width: 320px;
+}
+
+h1{
+	font-family: Arial;
+	color: gray;
+}
+
+p{
+	font-family: Arial;
+	color: gray;
 }
