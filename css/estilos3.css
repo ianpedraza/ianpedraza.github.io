@@ -16,10 +16,9 @@
 .franja
 {
     width: 240px;
-    height: 600px;
+    height: 100%;
     background-image:  url(../images/Trazado.png);
     position: absolute;
-    
 }
 
 .puntos{
@@ -53,11 +52,10 @@ a{
 .Menu{
     justify-content: space-between;
     display: flex;
-    position: relative;
-    color: black;
+    margin-left: 75%;
+    color: #2f4858;
     width: 300px;
-    top: -40px;
-    left: 1000px;
+    transform: translateY(-130%);
 }
 
 .titulo{
@@ -85,6 +83,7 @@ h2{
     font-family:'Product Sans Black';
     font-size: 28px;
 }
+
 .lista a{
     font-family:'Product Sans Regular';
     display: flex;
@@ -95,7 +94,7 @@ h2{
     position: relative;
     background-color: white;
     padding-left: 30px;
-    margin-left: 975px;
+    margin-left: 76%;
     margin-top: -170px;
     width: 350px;
     height: 300px;

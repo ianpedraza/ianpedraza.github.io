@@ -16,10 +16,18 @@
 .franja
 {
     width: 240px;
-    height: 600px;
+    height: 100%;
     background-image:  url(../images/Trazado.png);
     position: absolute;
-    
+}
+
+.Menu{
+    justify-content: space-between;
+    display: flex;
+    margin-left: 75%;
+    color: #2f4858;
+    width: 300px;
+    transform: translateY(-130%);
 }
 
 .puntos{
@@ -43,10 +51,6 @@ h1{
     margin: 0;
 }
 
-.contenedor{
-    
-}
-
 .profile{
     border: 8px solid white;
     border-radius: 50%;
@@ -63,16 +67,6 @@ a{
     font-family:'Product Sans Regular';
     font-size: 24px;
 }
-.Menu{
-    justify-content: space-between;
-    display: flex;
-    position: relative;
-    color: black;
-    width: 300px;
-    top: -400px;
-    left: 1000px;
-}
-
 
 .info{
      background-color:#87F0B8;
