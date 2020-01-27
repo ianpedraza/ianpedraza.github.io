@@ -61,20 +61,24 @@ h1{
     top: 80px;
 }
 
-a{
+.Menu a{
     text-decoration: none;
     color: #2f4858;
     font-family:'Product Sans Regular';
     font-size: 24px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .info{
-     background-color:#87F0B8;
-     width: 300px;
-     color:#2f4858;
-     font-family: Product Sans Regular;
-     margin-left: 730px;
-    padding-right: 60px;
+    background-color:#87F0B8;
+    width: 300px;
+    color:#2f4858;
+    font-family: Product Sans Regular;
+    margin-left: 68%;
+    padding-right: 125px;
     padding-left: 60px;
     padding-top: 20px;
     padding-bottom: 35px;

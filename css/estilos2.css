@@ -51,9 +51,13 @@ h1{
     margin: 0;
 }
 
-a{
+.Menu a{
     text-decoration: none;
     color: #2f4858;
     font-family:'Product Sans Regular';
     font-size: 24px;
+}
+
+a {
+    text-decoration: none;
 }
