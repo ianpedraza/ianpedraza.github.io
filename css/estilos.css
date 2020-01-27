@@ -92,6 +92,39 @@ a {
     color:#2f4858;
 }
 
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  } 
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #E1306C;
+    color: white;
+  }
+  
+  .fa-github {
+    background: black;
+    color: white;
+  }
+
 @media screen and (max-width: 480px){
     h1{
         font-family:'Product Sans Black';
