@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'Product Sans Black';
+    src: url('../fonts/prouct_sans_black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Product Sans Regular';
+    src: url('../fonts/product_sans_regular.ttf') format('truetype');
+}
+
+.body{
+    display: flex;
+    margin: 0;
+}
+
+.franja
+{
+    width: 240px;
+    height: 600px;
+    background-image:  url(../images/Trazado.png);
+    position: absolute;
+    
+}
+
+.puntos{
+    position: relative;
+    transform: scale(0.6);
+    top: 50px;
+}
+
+.elementos{
+    position: relative;
+    right: 70px;
+    transform: scale(0.7);
+    top: -50px;
+}
+
+h1{
+    font-family:'Product Sans Black';
+    position: relative;
+    color: white;
+    padding: 15px;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #2f4858;
+    font-family:'Product Sans Regular';
+    font-size: 24px;
+}
+
+.Menu{
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+    color: black;
+    width: 300px;
+    top: -40px;
+    left: 1000px;
+}
+
+.titulo{
+    display: flex;
+    position: relative;
+    background-color: #87f0b8;
+    border-radius:15px;
+    border: 8px solid white;
+    width: 550px;
+    margin-left: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo h1{
+    color: #2f4858;
+}
+
+.lista{
+    position: relative;
+    margin-left: 300px;
+}
+
+h2{
+    font-family:'Product Sans Black';
+    font-size: 28px;
+}
+.lista a{
+    font-family:'Product Sans Regular';
+    display: flex;
+    font-size: 20px;
+}
+
+.reciente{
+    position: relative;
+    background-color: white;
+    padding-left: 30px;
+    margin-left: 975px;
+    margin-top: -170px;
+    width: 350px;
+    height: 300px;
+}
+
+.reciente a{
+    color: #2f4858;
+    font-family:'Product Sans Regular';
+    display: flex;
+    font-size: 20px;
+}
+.mas{
+    margin-left: -30px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #87f0b8;
+    width: 380px;
+
+}
+
+.mas h1{
+    color: white;
+    font-size: 28px;
+}

@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Product Sans Black';
+    src: url('../fonts/prouct_sans_black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Product Sans Regular';
+    src: url('../fonts/product_sans_regular.ttf') format('truetype');
+}
+
+.body{
+    display: flex;
+    margin: 0;
+}
+
+.franja
+{
+    width: 240px;
+    height: 600px;
+    background-image:  url(../images/Trazado.png);
+    position: absolute;
+    
+}
+
+.puntos{
+    position: relative;
+    transform: scale(0.6);
+    top: 50px;
+}
+
+.elementos{
+    position: relative;
+    right: 70px;
+    transform: scale(0.7);
+    top: -50px;
+}
+
+h1{
+    font-family:'Product Sans Black';
+    position: relative;
+    color: white;
+    padding: 15px;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #2f4858;
+    font-family:'Product Sans Regular';
+    font-size: 24px;
+}
+
+.Menu{
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+    color: black;
+    width: 300px;
+    top: -40px;
+    left: 1000px;
+}
