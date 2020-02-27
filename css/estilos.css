@@ -87,6 +87,7 @@ body{
     margin-left: 10px;
     text-align: center;
     display: block;
+    text-transform:capitalize;
 }
 
 .menu{
@@ -149,6 +150,7 @@ body{
 
 #selected {
     font-weight: bold;
+    color: #32DE84;
 }
 
 .date{
