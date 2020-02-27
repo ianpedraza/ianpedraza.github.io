@@ -13,6 +13,11 @@
     src: url('../fonts/consola.ttf') format('truetype');
 }
 
+.blank_space{
+    width: 100%;
+    height: 100px;
+}
+
 .page_not_found {
     width: 400px;
     height: 300px;
@@ -37,7 +42,7 @@ body{
 }
 
 .contenedor{
-    width: 1200px;
+    width: 1024px;
     margin: 0 auto;
 }
 
@@ -192,6 +197,8 @@ body{
     padding: 20px;
     display: table;
     margin: 0 auto;
+    margin-bottom: 20px;
+    width: 80%;
 }
 
 .projectConatiner:hover {
@@ -201,6 +208,7 @@ body{
 
 .projectItemBody{
     float: left;
+    width: 90%;
 }
 
 .divider {
@@ -223,6 +231,14 @@ body{
 }
 
 @media screen and (max-width: 900px){
+    .projectConatiner {
+        width: 80%;
+    }
+
+    .projectItemBody{
+        width: 100%;
+    }
+
     .date{
         display: none;
     }
@@ -312,5 +328,4 @@ body{
         margin-left: 10px;
     }
     
-
 }
