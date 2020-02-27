@@ -86,6 +86,8 @@ body{
 
 .menu{
     overflow: hidden;
+    position: relative;
+    z-index: 1000;
 }
 
 #icon{
