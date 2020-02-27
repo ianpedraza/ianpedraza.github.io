@@ -8,157 +8,204 @@
     src: url('../fonts/product_sans_regular.ttf') format('truetype');
 }
 
-.body{
-    display: flex;
-    margin: 0;
+@font-face {
+    font-family: 'Consolas';
+    src: url('../fonts/consola.ttf') format('truetype');
 }
 
-.franja
-{
-    width: 240px;
-    height: 100%;
-    background-image:  url(../images/Trazado.png);
-    position: absolute;
+body{
+    margin: 0px 0px 0px 0px;
+    background-color: #F6F6F6;
 }
 
-.Menu{
-    justify-content: space-between;
-    display: flex;
-    margin-left: 75%;
-    color: #2f4858;
-    width: 300px;
-    transform: translateY(-130%);
+.contenedor{
+    width: 1200px;
+    margin: 0 auto;
 }
 
-.puntos{
-    position: relative;
-    transform: scale(0.6);
-    top: 50px;
+.banner{
+    width: 100%;
+    height: 100px;    
 }
 
-.elementos{
-    position: relative;
-    right: 70px;
-    transform: scale(0.7);
-    top: -50px;
+.centrar {
+    margin: 0 auto;
+    width: 900px;
+    margin-top: 80px;
 }
 
-h1{
+.titulo{
+    color: #32DE84;
+    float: left;
+    margin-top: 33px;
+    margin-left: 50px;
+    font-size: 25px;    
+    text-decoration: none;
     font-family:'Product Sans Black';
-    position: relative;
-    color: white;
-    padding: 15px;
-    margin: 0;
 }
 
-.profile{
-    border: 8px solid white;
-    border-radius: 50%;
-    position: relative;
-    width: 25%;
-    height: 25%;
-    transform: translateX(100px);
-    top: 80px;
+.itemMenu:hover {
+    opacity: 0.5;
 }
 
-.Menu a{
+.titulo:hover{
+    opacity: 0.5;
+}
+
+.itemMenu {
     text-decoration: none;
-    color: #2f4858;
-    font-family:'Product Sans Regular';
-    font-size: 24px;
-}
-
-a {
-    text-decoration: none;
-}
-
-.info{
-    background-color:#87F0B8;
-    width: 300px;
-    color:#2f4858;
-    font-family: Product Sans Regular;
-    margin-left: 68%;
-    padding-right: 125px;
-    padding-left: 60px;
-    padding-top: 20px;
-    padding-bottom: 35px;
-    border-top-left-radius:5% ;
-    border-bottom-left-radius: 5%;
-    margin-top: -350px;
-}
-
-.info h1{
-    padding: 0px;
-    color:#2f4858;
-}
-
-.fa {
-    padding: 15px;
-    font-size: 30px;
-    width: 15px;
+    float: right;
+    font-family: 'Product Sans';
+    color: #2F4858;
+    font-size: 18px;
+    margin-top: 0;
+    margin-top: 33px;
+    margin-right: 10px;
+    margin-left: 10px;
     text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-  }
-  
-  .fa:hover {
-      opacity: 0.7;
-  } 
-  
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-  }
-  
-  .fa-linkedin {
-    background: #007bb5;
-    color: white;
-  }
-  
-  .fa-instagram {
-    background: #E1306C;
-    color: white;
-  }
-  
-  .fa-github {
-    background: black;
-    color: white;
-  }
+    display: block;
+}
 
-@media screen and (max-width: 480px){
-    h1{
-        font-family:'Product Sans Black';
-        position: relative;
-        color: #2f4858;
-        padding: 15px;
-        /* margin: 0; */
-        
+.menu{
+    overflow: hidden;
+}
+
+#icon{
+    display: none;
+}
+
+.nombre {
+    font-family: 'Consolas';
+    font-size: 50px;
+    color: #2F4858;
+}
+
+.description {
+    font-size: 26px;
+    font-family: 'Consolas';
+    color: #2F4858;
+    margin-top: 15px;
+}
+
+.description strong {
+    color: #32DE84;
+}
+
+.foto {
+    background-image: url(../images/foto.png);
+    width: 378px;
+    height: 342px;
+    float: right;
+    background-size: 100%;
+}
+
+.presentacion { 
+    float: left;   
+    margin-top: 50px;
+}
+
+.socialMediaIcons {
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 20px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.socialMediaPanel {
+    margin-top: 20px;
+}
+
+.socialMediaIcons:hover{
+    filter: none;
+    -webkit-filter: grayscale(0);
+}
+
+#selected {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 900px){
+    #icon{
+        float: left;
+        display: block;
+        position: absolute;
+        left: 0px;
+        top: 20px;
+        color: #2F4858;
+        padding: 20px;
+        position: fixed;
     }
 
-    .franja{
-        width: max-content;
-        height: 220%;
-        margin-top: 200px;
-        background-color: #87F0B8;
-       
+    .contenedor{
+        width: 100%;
     }
 
-    .info{
-        width: 300px;
-        transform: translateX(-610px);
-        margin-top:20px;
-        background-color: #87F0B8 ;
+    .titulo{
+        text-align: center;
+        width: 100%;
+        font-size: 30px;
+        margin-left: 0px;
+        margin-top: 30px;
     }
 
-    .profile{
-        border: 8px solid white;
-        border-radius: 50%;
-        position: relative;
-        width: 70%;
-        height: 70%;
-        transform: translateX(150px);
-        top: 30px;
+    .itemMenu{
+        width: 100%;
+        padding: 10px;
+        margin-top: 0px;
+        margin-left: 0px;
+        float: left;
+        text-align: left;
+        color: white;
     }
 
+    .menu{
+        width: 100%;
+        background-color: #2F4858;
+        display: none;
+        margin-top: 10px;
+    }
+
+    .foto{
+        float: none;
+        margin: 0 auto;
+        width: 230px;
+        height: 207px;
+    }
+
+    .presentacion{
+        width: 100%;       
+    }
+
+    .centrar{
+        width: 100%;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .nombre{
+        font-size: 25px;
+    }
+
+    .description{
+        font-size: 20px;
+        text-align: center;
+    }
     
+    .socialMediaPanel{
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    .socialMediaPanel div{
+        display: inline-block;
+    }
+
+    .socialMediaIcons{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    
+
 }
