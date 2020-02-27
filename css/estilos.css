@@ -27,7 +27,7 @@
     font-size: 25px;
     margin-top: 10px;
     color: #2F4858;
-    font-family:'Product Sans';
+    font-family:'Product Sans Regular';
     margin-top: 20px;
 }
 
@@ -73,7 +73,7 @@ body{
 .itemMenu {
     text-decoration: none;
     float: right;
-    font-family: 'Product Sans';
+    font-family: 'Product Sans Regular';
     color: #2F4858;
     font-size: 18px;
     margin-top: 0;
