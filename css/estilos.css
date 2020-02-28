@@ -207,7 +207,6 @@ body{
     box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
 }
 
-
 .projectItemBody{
     float: left;
     width: 90%;
@@ -241,6 +240,10 @@ body{
         width: 100%;
     }
 
+    .projectItemDescription{
+        margin-top: 15px;
+    }
+
     .date{
         display: none;
     }
@@ -255,10 +258,16 @@ body{
         display: block;
         position: absolute;
         left: 0px;
-        top: 20px;
-        color: #2F4858;
-        padding: 20px;
+        top: 28px;
+        left: 20px;
+        color: white;
+        background-color: #2F4858;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 9px;
+        padding-bottom: 9px;
         position: fixed;
+        z-index: 9999;
     }
 
     .contenedor{
