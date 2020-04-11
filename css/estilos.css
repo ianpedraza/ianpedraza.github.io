@@ -365,4 +365,7 @@ body{
         margin-left: 10px;
     }
     
+    .banner {
+        width: 100%;
+    }
 }
