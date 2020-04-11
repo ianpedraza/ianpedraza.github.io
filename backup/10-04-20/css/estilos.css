@@ -20,11 +20,10 @@
 
 .page_not_found {
     width: 400px;
-    height: 250px;
-    background-image: url(../images/4042.png);
+    height: 300px;
+    background-image: url(../images/404.png);
     background-size: 100%;
     margin: 0 auto;
-    background-repeat: no-repeat;
 }
 
 .page_not_found_subtittle{
@@ -32,45 +31,34 @@
     text-align: center;
     font-size: 25px;
     margin-top: 10px;
-    color: white;
+    color: #2F4858;
     font-family:'Product Sans Regular';
     margin-top: 20px;
 }
 
-html {
-    height: 100%;   
-}
-
 body{
     margin: 0px 0px 0px 0px;
-    background-color: #010101;
-    height: 100%;
-    background-size: cover;
-    background-image: url(../images/foto.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
+    background-color: #F6F6F6;
 }
 
 .contenedor{
-    width: 100%;
-    height: 100%;
+    width: 1024px;
     margin: 0 auto;
 }
 
 .banner{
-    width: 80%;
-    height: 15%;  
-    margin: 0 auto;  
+    width: 100%;
+    height: 100px;    
 }
 
 .centrar {
     margin: 0 auto;
-    width: 100%;
+    width: 900px;
     margin-top: 80px;
 }
 
 .titulo{
-    color: #ffffff;
+    color: #32DE84;
     float: left;
     margin-top: 33px;
     margin-left: 50px;
@@ -91,7 +79,7 @@ body{
     text-decoration: none;
     float: right;
     font-family: 'Product Sans Regular';
-    color: #ffffff;
+    color: #2F4858;
     font-size: 18px;
     margin-top: 0;
     margin-top: 33px;
@@ -114,14 +102,14 @@ body{
 
 .nombre {
     font-family: 'Consolas';
-    font-size: 80px;
-    color: #32DE84;
+    font-size: 50px;
+    color: #2F4858;
 }
 
 .description {
-    font-size: 35px;
+    font-size: 26px;
     font-family: 'Consolas';
-    color: #ffffff;
+    color: #2F4858;
     margin-top: 15px;
 }
 
@@ -129,13 +117,17 @@ body{
     color: #32DE84;
 }
 
+.foto {
+    background-image: url(../images/foto.png);
+    width: 378px;
+    height: 342px;
+    float: right;
+    background-size: 100%;
+}
+
 .presentacion { 
-    position: absolute;
-    margin: 0;
-    top: 60%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    left: 50%;  
+    float: left;   
+    margin-top: 50px;
 }
 
 .socialMediaIcons {
@@ -175,7 +167,7 @@ body{
     text-decoration: none;
     font-family: 'Consolas';
     font-size: 16px;
-    color: #32DE84;
+    color: #2F4858;
     margin-right: 20px;
     font-weight: bold;
     margin-top: 10px;
@@ -196,7 +188,7 @@ body{
 }
 
 .projectConatiner {
-    background: #202124;
+    background: #fff;
     border-radius: 2px;
     display: inline-block;
     margin: 1rem;
@@ -209,7 +201,6 @@ body{
     margin: 0 auto;
     margin-bottom: 20px;
     width: 80%;
-    color: white;
 }
 
 .projectConatiner:hover {
@@ -240,17 +231,7 @@ body{
     font-size: 18px;
 }
 
-.foto{
-    width: 230px;
-    height: 207px;
-}
-
 @media screen and (max-width: 900px){
-
-    body {
-        background-image: none;
-    }
-
     .projectConatiner {
         width: 80%;
     }
@@ -269,8 +250,7 @@ body{
 
     .page_not_found {
         width: 300px;
-        height: 170px;
-        margin-top: 100px;
+        height: 240px;
     }
 
     #icon{
@@ -317,23 +297,16 @@ body{
         display: none;
         margin-top: 10px;
     }
-    
-    .foto {
-        background-image: url(../images/picture.jpg);
-        width: 230px;
-        height: 230px;
-        background-repeat: no-repeat;
+
+    .foto{
         float: none;
-        background-size: 100%;
-        border-radius: 50%;
         margin: 0 auto;
-        /* border: 4px solid #202124; */ 
+        width: 230px;
+        height: 207px;
     }
 
     .presentacion{
-        width: 100%; 
-        position: static;     
-        margin-top: 180px;
+        width: 100%;       
     }
 
     .centrar{
