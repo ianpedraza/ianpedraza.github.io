@@ -1,13 +1,19 @@
-var isActiveBar = false;
+//document.addEventListener('contextmenu', event => event.preventDefault());
 
-function myFunction() {
+/* Controlador menú */
+function openMenu() {
     var x = document.getElementById("myTopnav");
     
-    if (isActiveBar) {
-        myTopnav.style.display = "none";
+    if (x.className === "topnav") {
+      x.className += " responsive";
+      document.getElementById("logo").style.display = "none";;
     } else {
-        myTopnav.style.display = "inline-grid";
+      x.className = "topnav";
+      document.getElementById("logo").style.display = "block";;
     }
+}
+/* Controlador menú */
 
-    isActiveBar = !isActiveBar;
+function goHome() {
+    document.location.href = "http://www.ianpedraza.com";
 }

@@ -1,56 +1,143 @@
-<!DOCTYPE html>
-
 <html>
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
         <title>Ian Pedraza | Home</title>
-        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+        <link href="css/styles.css" rel="stylesheet" type="text/css"/>
 
-        <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="src/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="src/favicon-16x16.png"> 
-        
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">     
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
         <script src="js/controlador.js"></script>
     </head>
 
     <body>
-        <div class="contenedor">
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+            <div id="iconUp"></div>
+        </button>
+
+        <div class="topnav" id="myTopnav">
+            <div id="logo" onclick="goHome()"></div>
             
-            <div class="banner">
-                <div> <a href="index.html" class="titulo">ian pedraza</a></div>
+            <a href="about.html" id="lastItemMenu">contact</a>
+            <a href="#projects" class="active">projects</a>
+            
+            <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <div id="contact" class="introduce">
+            <p id="introduce-text">Hello, I'm <span class="highlight">Ian Pedraza.</span>
+                <br>I'm android developer<br>and fond of graphic design.
+                <span style="font-size: 22pt; font-family: 'SourceCodePro-Medium';"><br>Here you got some from my work.</span>
+            </p>
+
+        </div>
+
+        <div id="projects" class="works">
+            <div class="row" > 
+                <div class="column">
+                    <a href="projects/codumi.html"><img src="images/codumi-square.png" style="width:100%;"></a>
+                    <a href="projects/panda-ar.html"><img src="images/panda-ar-square.png" style="width:100%;"></a>
+                </div>
+
+                <div class="column">
+                    <a href="projects/adomi.html"><img src="images/adomi-square.png" style="width:100%;"></a>
+                    <a href="projects/jabflash.html"><img src="images/scree-jabflash.png" style="width:100%;"></a>
+                    <a href="projects/guess-who.html"><img src="images/adivina-square.png" style="width:100%;"></a>
+                </div>
+
+                <div class="column">
+                    <a href="projects/adomi-app.html"><img src="images/adomi-screens.jpg" style="width:100%;"></a>
+                    <a href="projects/bookly.html"><img src="images/bookly-square.png" style="width:100%;"></a>
+                    <a href="projects/on-swift.html"><img src="images/on-swift-saquere.png" style="width:100%;"></a>
+                </div>
                 
-                <div class="menu" id="myTopnav">
-                    <div> <a href="proyectos.html" class="itemMenu">proyectos</a></div>
-                    <div> <a href="blog.html" class="itemMenu">blog</a></div>
-                    <div> <a href="index.html" id="selected" class="itemMenu">inico</a></div>
-                </div>
-
-                <div><a href="javascript:void(0);" id="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></div>
-            </div>
-
-            <div class="centrar">
-                <div class="foto"></div>
-
-                <div class="presentacion">
-                    <div class="nombre">Ian Pedraza</div>
-                    <div class="description">Hello, my name is Ian Pedraza.<br>I am <strong>Android Developer</strong></div>
-                    <div class="socialMediaPanel">
-                        <div ><a href="mailto:ianpedrazacelon@gmail.com" target="_blank"><img class="socialMediaIcons" src="icons/mail.png" alt="e-mail"></a></div>
-                        <div><a href="https://twitter.com/ianpedraza_" target="_blank"><img class="socialMediaIcons" src="icons/tw.png" alt="Twitter"></a></div>
-                        <div><a href="https://www.instagram.com/ianpedraza/" target="_blank"><img class="socialMediaIcons" src="icons/insta.png" alt="Instagram"></a></div>
-                        <div ><a href="https://www.linkedin.com/in/ianpedraza/" target="_blank"><img class="socialMediaIcons" src="icons/ln.png" alt="LinkedIn"></a></div>
-                        <div ><a href="https://github.com/ianpedraza" target="_blank"><img class="socialMediaIcons" src="icons/github.png" alt="Github" style="-webkit-filter: invert(100%);"></a></div>
-                        <div ><a href="https://www.youtube.com/channel/UCkmW5QcrjNYXGaWxW03HJdQ" target="_blank"><img class="socialMediaIcons" src="icons/yt.png" alt="YouTube"></a></div>
-                    </div>
-                    <div class="blank_space"></div>
-                </div>
-
             </div>
         </div>
+
+        <div class="section">
+            <div class="row" style="margin-bottom: 80px; margin-left: 20px; margin-right: 20px;"> 
+                <div class="column">
+                    <a href="projects/adomi-app.html"><img src="logos/adomi.png" style="width:60%;margin-top: 80px;"></a>
+                    <a href="projects/on-swift.html"><img src="logos/on-swift.png" style="width:60%;margin-top: 80px;"></a>
+                </div>
+
+                <div class="column">
+                    <a href="projects/jabflash.html"><img src="logos/jabflash.png" style="width:60%;margin-top: 80px;"></a>
+                    <a href="projects/codumi.html"><img src="logos/codumi.png" style="width:60%;margin-top: 80px;"></a>
+                </div>
+
+                <div class="column">
+                    <a href="projects/panda-ar.html"><img src="logos/panda-ar.png" style="width:60%;margin-top: 80px;"></a>
+                    <a href="projects/bookly.html"><img src="logos/bookly.png" style="width:60%;margin-top: 80px;"></a>
+                </div>
+
+              </div>
+        </div>
+
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+        </script>
+
     </body>
-</html> 
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-left">
+                    <div class="logo-footer"></div>
+
+                    <a class="footer-mail" href="mailto:ianpedrazacelon@gmail.com" target="_blank">ianpedrazacelon@gmail.com</a>
+
+                    <p style="display: none;">
+                        <span class="footer-title">Footer content</span>
+                        <br>
+                        You can use rows and columns here to organize your footer content.
+                    </p>
+                </div>
+                
+                <div class="footer-right">
+                    <li><a href="https://github.com/ianpedraza" target="_blank">Github</a></li>
+                    <li><a href="https://twitter.com/ianpedraza_" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/ianpedraza/" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/in/ianpedraza/" target="_blank">Linkedin</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCkmW5QcrjNYXGaWxW03HJdQ" target="_blank">Youtube</a></li>                </div>    
+                </div>
+
+                <div class="footer-copyright">
+                    <p>© Ian Pedraza / Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</html>
