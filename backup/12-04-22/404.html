@@ -1,0 +1,105 @@
+<html>
+
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+      <title>Ian Pedraza | About</title>
+      <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+
+      <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">     
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+      <script src="js/controlador.js"></script>
+    </head>
+
+    <body>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <div id="iconUp"></div>
+      </button>
+
+      <div class="topnav" id="myTopnav">
+        <div id="logo" onclick="goHome()"></div>
+        
+        <a href="#" id="lastItemMenu">contact</a>
+        <a href="index.html#projects">projects</a>
+        
+        <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+      <div style="width: 100%; height: 70%; text-align: center;">
+        <div style="margin-top: 85px;">
+          <p style="font-size: 20pt; font-family: 'SourceCodePro-Black';">
+            <span style="font-size: 100pt;">404</span>
+            <br>
+            Oops! Something went wrong…
+          </p>
+          
+          <p style="font-size: 16pt; font-family: 'SourceCodePro-Medium';">
+            Page not found. Please continue to our home page
+          </p>
+        </div>
+      </div>
+
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+
+  </body>
+
+  <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-row">
+            <div class="footer-left">
+                <div class="logo-footer"></div>
+
+                <a class="footer-mail" href="mailto:ianpedrazacelon@gmail.com" target="_blank">ianpedrazacelon@gmail.com</a>
+
+                <p style="display: none;">
+                    <span class="footer-title">Footer content</span>
+                    <br>
+                    You can use rows and columns here to organize your footer content.
+                </p>
+            </div>
+            
+            <div class="footer-right">
+                <li><a href="https://github.com/ianpedraza" target="_blank">Github</a></li>
+                <li><a href="https://twitter.com/ianpedraza_" target="_blank">Twitter</a></li>
+                <li><a href="https://www.linkedin.com/in/ianpedraza/" target="_blank">Linkedin</a></li>
+            </div>
+
+            <div class="footer-copyright">
+                <p>© Ian Pedraza / Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</html>

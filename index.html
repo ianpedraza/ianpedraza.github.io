@@ -1,138 +1,238 @@
-<html>
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-        <title>Ian Pedraza | Home</title>
-        <link href="css/styles.css" rel="stylesheet" type="text/css"/>
-
-        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">     
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-        <script src="js/controlador.js"></script>
-    </head>
-
-    <body>
-        <button onclick="topFunction()" id="myBtn" title="Go to top">
-            <div id="iconUp"></div>
-        </button>
-
-        <div class="topnav" id="myTopnav">
-            <div id="logo" onclick="goHome()"></div>
-            
-            <a href="about.html" id="lastItemMenu">contact</a>
-            <a href="#projects" class="active">projects</a>
-            
-            <a href="javascript:void(0);" class="icon" onclick="openMenu()">
-              <i class="fa fa-bars"></i>
-            </a>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ian Pedraza</title>
+    <meta
+      name="description"
+      content="Soy desarrollador de aplicaciones móviles en Android, iOS y Flutter, aquí encontrarás información sobre mí y los proyectos que he desarrollado."
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/media-queries.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <section class="header-icons-container">
+        <div class="icons">
+          <a
+            href="https://www.github.com/ianpedraza"
+            aria-label="github"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="fa fa-github"></span>
+          </a>
+          <a
+            href="https://www.twitter.com/ianpedrazac"
+            aria-label="twitter"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="fa fa-twitter"></span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/ianpedraza"
+            aria-label="linkedin"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="fa fa-linkedin"></span>
+          </a>
+          <a
+            href="https://www.instagram.com/ianpedraza"
+            aria-label="instagram"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="fa fa-instagram"></span>
+          </a>
         </div>
-
-        <div id="contact" class="introduce">
-            <p id="introduce-text">Hello World ! I'm <span class="highlight">Ian Pedraza.</span>
-                <br>I'm android developer.<br>
-                <span style="font-size: 22pt; font-family: 'SourceCodePro-Medium';"><br>Here you got some from my works.</span>
+      </section>
+      <nav>
+        <section class="nav-logo-container">
+          <a href="./index.html" aria-label="home">
+            <div class="logo"></div>
+          </a>
+        </section>
+        <section class="nav-profile-link">
+          <a href="./about/" aria-label="¿Quién es Ian Pedraza?"
+            >¿Quién es Ian?</a
+          >
+        </section>
+      </nav>
+    </header>
+    <main class="blogs-main">
+      <section class="blogs-main-new">
+        <div class="grid-container main-new-container">
+          <h3></h3>
+          <div class="main-new__img-container">
+            <img
+              src="./assets/img/profile_picture.png"
+              alt="Foto de Ian Pedraza"
+            />
+          </div>
+          <div class="main-new__info-container">
+            <h2>Hola, mi nombre es Ian.</h2>
+            <p>
+              Soy Ingeniero en Ciencias de la Computación y me dedico al
+              desarrollo de aplicaciones móviles en Android, iOS y Flutter; en
+              este sitio encontrarás información sobre mí y los proyectos que he
+              desarrollado. Me encanta aprender, el cine y las películas y
+              series de Marvel Studios.
             </p>
-
+            <a
+              class="button--outlined"
+              href="mailto:dev@ianpedraza.com"
+              aria-label="contactar"
+              >Contactar</a
+            >
+          </div>
         </div>
-
-        <div id="projects" class="works" style="margin-bottom: 20px;">
-            <div class="row" > 
-                <div class="column">
-                    <a href="projects/adomi-app.html"><img src="images/adomi-screens.jpg" style="width:100%;"></a>
-                    <a href="projects/on-swift.html"><img src="images/on-swift-saquere.png" style="width:100%;"></a>
-                </div>
-
-                <div class="column">
-                    <a href="projects/jabflash.html"><img src="images/scree-jabflash.png" style="width:100%;"></a>
-                    <a href="projects/guess-who.html"><img src="images/adivina-square.png" style="width:100%;"></a>
-                </div>
-
-                <div class="column">
-                    <a href="projects/panda-ar.html"><img src="images/panda-ar-square.png" style="width:100%;"></a>
-                    <a href="projects/bookly.html"><img src="images/bookly-square.png" style="width:100%;"></a>
-                </div>
-                
-            </div>
+      </section>
+      <section class="blogs-posts">
+        <div class="grid-container">
+          <h3>Proyectos</h3>
+          <div class="posts-container">
+            <article class="post-item">
+              <img
+                src="./assets/img/cover/adomi-screens.jpg"
+                alt="post cover"
+              />
+              <p class="post-item__title">Adomi</p>
+              <p class="post-item__content">
+                Adomi es una super aplicación al más puro estilo de Rappi pero
+                enfocada a los “Pueblos Mágicos” de México.
+              </p>
+              <a class="button--outlined" href="./adomi/" aria-label="leer más"
+                >Leer más</a
+              >
+            </article>
+            <article class="post-item">
+              <img
+                src="./assets/img/cover/panda-ar-square.png"
+                alt="post cover"
+              />
+              <p class="post-item__title">Panda AR</p>
+              <p class="post-item__content">
+                Como todos sabemos, los pandas están en peligro de extinción.
+                Usando tecnologías como AR y VR podemos llegar a muchas personas
+                para que prueben esta aplicación y hacerles saber un poco más
+                sobre los pandas.
+              </p>
+              <a
+                class="button--outlined"
+                href="./pandaar/"
+                aria-label="leer más"
+                >Leer más</a
+              >
+            </article>
+            <article class="post-item">
+              <img
+                src="./assets/img/cover/bookly-square.png"
+                alt="post cover"
+              />
+              <p class="post-item__title">Bookly</p>
+              <p class="post-item__content">
+                Es una aplicación diseñada para estudiantes, la mayoría de las
+                veces los estudiantes no encuentran los libros que necesitan en
+                las bibliotecas universitarias o, a veces, están agotados y
+                comprar los libros es demasiado caro para ellos.
+              </p>
+              <a class="button--outlined" href="./bookly/" aria-label="leer más"
+                >Leer más</a
+              >
+            </article>
+            <article class="post-item">
+              <img
+                src="./assets/img/cover/adivina-square.png"
+                alt="post cover"
+              />
+              <p class="post-item__title">Adivina Quién?</p>
+              <p class="post-item__content">
+                El clásico juego de mesa adaptado a móviles con diseño moderno e
+                importantes personajes históricos actuales para conocer un poco
+                de ellos.
+              </p>
+              <a
+                class="button--outlined"
+                href="./guesswho/"
+                aria-label="leer más"
+                >Leer más</a
+              >
+            </article>
+            <article class="post-item">
+              <img
+                src="./assets/img/cover/on-swift-saquere.png"
+                alt="post cover"
+              />
+              <p class="post-item__title">On Swift</p>
+              <p class="post-item__content">
+                Desarrollada para Intelligent Delivery, es una aplicación de
+                entrega de alimentos, ofrece los productos de los diferentes
+                socios comerciales.
+              </p>
+              <a
+                class="button--outlined"
+                href="./onswift/"
+                aria-label="leer más"
+                >Leer más</a
+              >
+            </article>
+            <article class="post-item">
+              <img
+                src="./assets/img/cover/scree-jabflash.png"
+                alt="post cover"
+              />
+              <p class="post-item__title">Jabflash</p>
+              <p class="post-item__content">
+                Permite el mantenimiento y reparación de software a dispositivos
+                Android. Puede hacer copias de seguridad, restaurar la señal
+                cuando se pierde, reinstalar todo el sistema operativo cuando el
+                dispositivo muere, eliminar el código de acceso cuando es
+                olvidado, rootear, restablecer el dispositivo, apagar, etc.
+              </p>
+              <a
+                class="button--outlined"
+                href="./jabflash/"
+                aria-label="leer más"
+                >Leer más</a
+              >
+            </article>
+          </div>
         </div>
-
-        <div class="section" style="display: none;">
-            <div class="row" style="margin-bottom: 80px; margin-left: 20px; margin-right: 20px;"> 
-                <div class="column">
-                    <a href="projects/adomi-app.html"><img src="logos/adomi.png" style="width:60%;margin-top: 80px;"></a>
-                    <a href="projects/panda-ar.html"><img src="logos/panda-ar.png" style="width:60%;margin-top: 80px;"></a>                    
-                </div>
-
-                <div class="column">
-                    <a href="projects/jabflash.html"><img src="logos/jabflash.png" style="width:60%;margin-top: 80px;"></a>
-                    <a href="projects/bookly.html"><img src="logos/bookly.png" style="width:60%;margin-top: 80px;"></a>
-                </div>
-
-                <div class="column">
-                    <a href="projects/on-swift.html"><img src="logos/on-swift.png" style="width:60%;margin-top: 80px;"></a>
-                </div>
-
-              </div>
-        </div>
-
-        <script>
-            //Get the button
-            var mybutton = document.getElementById("myBtn");
-            
-            // When the user scrolls down 20px from the top of the document, show the button
-            window.onscroll = function() {scrollFunction()};
-            
-            function scrollFunction() {
-              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-              } else {
-                mybutton.style.display = "none";
-              }
-            }
-            
-            // When the user clicks on the button, scroll to the top of the document
-            function topFunction() {
-              document.body.scrollTop = 0;
-              document.documentElement.scrollTop = 0;
-            }
-        </script>
-
-    </body>
-
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-row">
-                <div class="footer-left">
-                    <div class="logo-footer"></div>
-
-                    <a class="footer-mail" href="mailto:ianpedrazacelon@gmail.com" target="_blank">ianpedrazacelon@gmail.com</a>
-
-                    <p style="display: none;">
-                        <span class="footer-title">Footer content</span>
-                        <br>
-                        You can use rows and columns here to organize your footer content.
-                    </p>
-                </div>
-                
-                <div class="footer-right">
-                    <li><a href="https://github.com/ianpedraza" target="_blank">Github</a></li>
-                    <li><a href="https://twitter.com/ianpedraza_" target="_blank">Twitter</a></li>
-                    <li><a href="https://www.linkedin.com/in/ianpedraza/" target="_blank">Linkedin</a></li>
-                </div>
-
-                <div class="footer-copyright">
-                    <p>© Ian Pedraza / Todos los derechos reservados.</p>
-                </div>
-            </div>
-        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Ian Pedraza © 2022</p>
     </footer>
-
+  </body>
 </html>
