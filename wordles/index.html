@@ -1,109 +1,161 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="/">
-
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
-
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="wordles">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <title>wordles</title>
-  <link rel="manifest" href="manifest.json">
-  <script src="splash/splash.js"></script>
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
-  <link rel="stylesheet" type="text/css" href="splash/style.css">
-</head>
-<body>
-  <picture id="splash">
-    <source srcset="splash/img/light-1x.png 1x, splash/img/light-2x.png 2x, splash/img/light-3x.png 3x, splash/img/light-4x.png 4x" media="(prefers-color-scheme: light)">
-    <source srcset="splash/img/dark-1x.png 1x, splash/img/dark-2x.png 2x, splash/img/dark-3x.png 3x, splash/img/dark-4x.png 4x" media="(prefers-color-scheme: dark)">
-    <img class="center" aria-hidden="true" src="splash/img/light-1x.png" alt=""/>
-  </picture>
-  <!-- This script installs service_worker.js to provide PWA functionality to
-       application. For more information, see:
-       https://developers.google.com/web/fundamentals/primers/service-workers -->
-  <script>
-    var serviceWorkerVersion = '795141453';
-    var scriptLoaded = false;
-    function loadMainDartJs() {
-      if (scriptLoaded) {
-        return;
-      }
-      scriptLoaded = true;
-      var scriptTag = document.createElement('script');
-      scriptTag.src = 'main.dart.js';
-      scriptTag.type = 'application/javascript';
-      document.body.append(scriptTag);
-    }
-
-    if ('serviceWorker' in navigator) {
-      // Service workers are supported. Use them.
-      window.addEventListener('load', function () {
-        // Wait for registration to finish before dropping the <script> tag.
-        // Otherwise, the browser will load the script multiple times,
-        // potentially different versions.
-        var serviceWorkerUrl = 'flutter_service_worker.js?v=' + serviceWorkerVersion;
-        navigator.serviceWorker.register(serviceWorkerUrl)
-          .then((reg) => {
-            function waitForActivation(serviceWorker) {
-              serviceWorker.addEventListener('statechange', () => {
-                if (serviceWorker.state == 'activated') {
-                  console.log('Installed new service worker.');
-                  loadMainDartJs();
-                }
-              });
-            }
-            if (!reg.active && (reg.installing || reg.waiting)) {
-              // No active web worker and we have installed or are installing
-              // one for the first time. Simply wait for it to activate.
-              waitForActivation(reg.installing || reg.waiting);
-            } else if (!reg.active.scriptURL.endsWith(serviceWorkerVersion)) {
-              // When the app updates the serviceWorkerVersion changes, so we
-              // need to ask the service worker to update.
-              console.log('New service worker available.');
-              reg.update();
-              waitForActivation(reg.installing);
-            } else {
-              // Existing service worker is still good.
-              console.log('Loading app from service worker.');
-              loadMainDartJs();
-            }
-          });
-
-        // If service worker doesn't succeed in a reasonable amount of time,
-        // fallback to plaint <script> tag.
-        setTimeout(() => {
-          if (!scriptLoaded) {
-            console.warn(
-              'Failed to load app from service worker. Falling back to plain <script> tag.',
-            );
-            loadMainDartJs();
-          }
-        }, 4000);
-      });
-    } else {
-      // Service workers not supported. Just drop the <script> tag.
-      loadMainDartJs();
-    }
-  </script>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ian Pedraza | WordlES</title>
+    <meta
+      name="description"
+      content="WordlES es el juego de palabras de Wordle completamente en Español y multi-plataforma."
+    />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/media-queries.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <section class="header-icons-container">
+        <div class="icons">
+          <a
+            href="https://www.github.com/ianpedraza"
+            aria-label="github"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="fa fa-github"></span>
+          </a>
+          <a
+            href="https://www.twitter.com/ianpedrazac"
+            aria-label="twitter"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="fa fa-twitter"></span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/ianpedraza"
+            aria-label="linkedin"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="fa fa-linkedin"></span>
+          </a>
+          <a
+            href="https://www.instagram.com/ianpedraza"
+            aria-label="instagram"
+            target="_blank"
+            rel="noopener"
+          >
+            <span class="fa fa-instagram"></span>
+          </a>
+        </div>
+      </section>
+      <nav>
+        <section class="nav-logo-container">
+          <a href="../index.html" aria-label="home">
+            <div class="logo"></div>
+          </a>
+        </section>
+        <section class="nav-profile-link">
+          <a href="../about/" aria-label="¿Quién es Ian Pedraza?"
+            >Biografía</a
+          >
+        </section>
+      </nav>
+    </header>
+    <main>
+      <section class="blogpost-main-container">
+        <div class="grid-container">
+          <article>
+            <h1>WordlES</h1>
+            <p>
+              Wordle es un juego de adivinar palabras, que tiene un formato de crucigrama. En él, tienes que adivinar una palabra en seis intentos con una palabra nueva cada día para adivinar. 
+            </p>
+            <p>
+              El juego originalmente consta solo de palabras en Inglés, pero he creado mi propia versión en Español. Esta re-adaptación incluye la opción de crear tu propia partida y compartirla con tus amigos o bien jugar una partida aleatoria. 
+            </p>
+            <p>
+              WordlES está hecho con Flutter, lo que significa que funciona tanto en Android, iOS y Web. Además utiliza los servicios de Firebase como Firestore, Hosting, Dynamic Links y Cloud Functions. Puedes encontrar el juego en este <a class="simple-link" href="https://wordles.online" target="_blank">enlace</a> o bien en la <a class="simple-link" href="https://play.google.com/store/apps/details?id=online.wordles.app" target="_blank">Google Play Store</a>.
+            </p>
+          </article>
+        </div>
+        <div class="grid-container gallery-container">
+          <article class="gallery-item">
+            <a href="./img/1.jpeg">
+              <img src="./img/1.jpeg" alt="image of project" />
+            </a>
+          </article>
+          <article class="gallery-item">
+            <a href="./img/2.jpeg">
+              <img src="./img/2.jpeg" alt="image of project" />
+            </a>
+          </article>
+          <article class="gallery-item">
+            <a href="./img/3.jpeg">
+              <img src="./img/3.jpeg" alt="image of project" />
+            </a>
+          </article>
+          <article class="gallery-item">
+            <a href="./img/4.jpeg">
+              <img src="./img/4.jpeg" alt="image of project" />
+            </a>
+          </article>
+          <article class="gallery-item">
+            <a href="./img/5.jpeg">
+              <img src="./img/5.jpeg" alt="image of project" />
+            </a>
+          </article>
+          <article class="gallery-item">
+            <a href="./img/6.jpeg">
+              <img src="./img/6.jpeg" alt="image of project" />
+            </a>
+          </article>
+          <article class="gallery-item">
+            <a href="./img/7.jpeg">
+              <img src="./img/7.jpeg" alt="image of project" />
+            </a>
+          </article>
+          <article class="gallery-item">
+            <a href="./img/8.jpeg">
+              <img src="./img/8.jpeg" alt="image of project" />
+            </a>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Ian Pedraza © 2022</p>
+    </footer>
+  </body>
 </html>
