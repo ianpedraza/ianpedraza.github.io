@@ -244,6 +244,10 @@ main {
   margin-right: 20px;
 }
 
+.post-item__holder {
+  width: 100%;
+}
+
 .post-item__title {
   margin-top: 20px;
   margin-bottom: 10px;
